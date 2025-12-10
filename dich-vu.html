@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ Của Chúng Tôi - Trung Tâm Thú Y</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo.jpg" alt="Logo Trung Tâm Thú Y">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Trang Chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+                    <li><a href="dich-vu.html" class="active">Dịch Vụ</a></li>
+                    <li><a href="dat-lich-kham.html">Đặt Lịch</a></li>
+                    <li><a href="lien-he.html">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="dang-nhap.html" class="btn btn-login">Đăng Nhập</a>
+                <a href="dang-ky.html" class="btn btn-register">Đăng Ký</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('images/banner-2.jpg');">
+            <div class="container">
+                <h1>Dịch Vụ Của Chúng Tôi</h1>
+                <p>Chăm sóc toàn diện cho sức khỏe và hạnh phúc của thú cưng.</p>
+            </div>
+        </section>
+
+        <section class="services-list-detailed section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Các Dịch Vụ Chăm Sóc Thú Cưng Hàng Đầu</h2>
+                    <p>Chúng tôi cung cấp một loạt các dịch vụ y tế và chăm sóc chuyên nghiệp để đảm bảo thú cưng của bạn luôn khỏe mạnh và vui vẻ.</p>
+                </div>
+
+                <div class="service-category reveal" id="kham-chan-doan">
+                    <div class="category-header">
+                        <i class="fas fa-stethoscope"></i>
+                        <h3>Khám & Chẩn Đoán Tổng Quát</h3>
+                    </div>
+                    <div class="category-content">
+                        <img src="images/dich-vu-kham.jpg" alt="Khám & Chẩn Đoán">
+                        <div class="text-block">
+                            <p>Chúng tôi cung cấp dịch vụ khám tổng quát định kỳ và khám khi có dấu hiệu bệnh, bao gồm kiểm tra sức khỏe, tư vấn dinh dưỡng và hành vi. Sử dụng các công nghệ chẩn đoán tiên tiến như xét nghiệm máu, nước tiểu, phân tích hình ảnh (X-quang, siêu âm) để đưa ra chẩn đoán chính xác nhất.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Khám tổng quát định kỳ</li>
+                                <li><i class="fas fa-check-circle"></i> Xét nghiệm máu, nước tiểu, phân</li>
+                                <li><i class="fas fa-check-circle"></i> Chẩn đoán hình ảnh (X-quang, siêu âm)</li>
+                                <li><i class="fas fa-check-circle"></i> Tư vấn dinh dưỡng và hành vi</li>
+                            </ul>
+                            <a href="dat-lich-kham.html" class="btn btn-sm-primary">Đặt Lịch Khám</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category reveal" id="tiem-phong">
+                    <div class="category-header">
+                        <i class="fas fa-syringe"></i>
+                        <h3>Tiêm Phòng & Tẩy Giun</h3>
+                    </div>
+                    <div class="category-content reverse">
+                        <img src="images/tiem-phong.jpg" alt="Tiêm Phòng & Tẩy Giun">
+                        <div class="text-block">
+                            <p>Bảo vệ thú cưng của bạn khỏi các bệnh truyền nhiễm nguy hiểm bằng cách tiêm phòng đầy đủ và đúng lịch. Chúng tôi cung cấp các loại vắc xin chất lượng cao và tư vấn lịch tiêm phù hợp với từng loại thú cưng. Ngoài ra, tẩy giun định kỳ là yếu tố quan trọng để duy trì sức khỏe đường ruột và ngăn ngừa các vấn đề tiêu hóa.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Tiêm vắc xin đa bệnh (Care, Parvo, dại...)</li>
+                                <li><i class="fas fa-check-circle"></i> Lịch tiêm phòng cá nhân hóa</li>
+                                <li><i class="fas fa-check-circle"></i> Tẩy giun sán định kỳ</li>
+                                <li><i class="fas fa-check-circle"></i> Tư vấn phòng bệnh tổng thể</li>
+                            </ul>
+                            <a href="dat-lich-kham.html" class="btn btn-sm-primary">Đặt Lịch Tiêm Phòng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category reveal" id="phau-thuat">
+                    <div class="category-header">
+                        <i class="fas fa-bone"></i>
+                        <h3>Phẫu Thuật & Chăm Sóc Hậu Phẫu</h3>
+                    </div>
+                    <div class="category-content">
+                        <img src="images/phau-thuat.jpg" alt="Phẫu Thuật & Chăm Sóc Hậu Phẫu">
+                        <div class="text-block">
+                            <p>Phòng phẫu thuật vô trùng, trang thiết bị hiện đại và đội ngũ bác sĩ phẫu thuật có chuyên môn cao, đảm bảo an toàn tối đa cho thú cưng. Chúng tôi thực hiện các ca phẫu thuật từ đơn giản đến phức tạp như triệt sản, phẫu thuật chỉnh hình, phẫu thuật loại bỏ khối u, và phẫu thuật cấp cứu. Chăm sóc hậu phẫu kỹ lưỡng giúp thú cưng hồi phục nhanh chóng.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Phẫu thuật triệt sản (chó, mèo)</li>
+                                <li><i class="fas fa-check-circle"></i> Phẫu thuật chỉnh hình, xương khớp</li>
+                                <li><i class="fas fa-check-circle"></i> Phẫu thuật loại bỏ khối u</li>
+                                <li><i class="fas fa-check-circle"></i> Chăm sóc và theo dõi hậu phẫu</li>
+                            </ul>
+                            <a href="lien-he.html" class="btn btn-sm-primary">Tư Vấn Phẫu Thuật</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category reveal" id="spa-grooming">
+                    <div class="category-header">
+                        <i class="fas fa-bath"></i>
+                        <h3>Spa & Grooming Thú Cưng</h3>
+                    </div>
+                    <div class="category-content reverse">
+                        <img src="images/spa.jpg" alt="Spa & Grooming">
+                        <div class="text-block">
+                            <p>Giúp thú cưng của bạn luôn sạch sẽ, thơm tho và đáng yêu với các dịch vụ spa và grooming chuyên nghiệp. Chúng tôi sử dụng sản phẩm chuyên dụng an toàn cho da và lông, cùng với kỹ thuật viên lành nghề để cắt tỉa lông, móng, vệ sinh tai, răng miệng, và tắm gội thư giãn. Đảm bảo thú cưng của bạn sẽ có một trải nghiệm tuyệt vời.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Tắm gội, sấy khô</li>
+                                <li><i class="fas fa-check-circle"></i> Cắt tỉa lông theo yêu cầu</li>
+                                <li><i class="fas fa-check-circle"></i> Vệ sinh tai, cắt móng, vắt tuyến hôi</li>
+                                <li><i class="fas fa-check-circle"></i> Dịch vụ spa thư giãn đặc biệt</li>
+                            </ul>
+                            <a href="dat-lich-kham.html" class="btn btn-sm-primary">Đặt Lịch Grooming</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category reveal" id="cap-cuu">
+                    <div class="category-header">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Cấp Cứu 24/7</h3>
+                    </div>
+                    <div class="category-content">
+                        <img src="images/cap-cuu.jpg" alt="Cấp Cứu 24/7">
+                        <div class="text-block">
+                            <p>Chúng tôi hiểu rằng những tình huống khẩn cấp có thể xảy ra bất cứ lúc nào. Vì vậy, Trung Tâm Thú Y cung cấp dịch vụ cấp cứu 24/7 với đội ngũ y bác sĩ luôn sẵn sàng tiếp nhận và điều trị kịp thời cho thú cưng trong các trường hợp nguy kịch như tai nạn, ngộ độc, khó thở, co giật, v.v. Hãy liên hệ ngay với chúng tôi khi thú cưng của bạn cần sự hỗ trợ khẩn cấp.</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Tiếp nhận và xử lý cấp cứu</li>
+                                <li><i class="fas fa-check-circle"></i> Hồi sức tích cực</li>
+                                <li><i class="fas fa-check-circle"></i> Ngân hàng máu (nếu có)</li>
+                                <li><i class="fas fa-check-circle"></i> Trang thiết bị hỗ trợ sự sống</li>
+                            </ul>
+                            <a href="lien-he.html" class="btn btn-sm-primary">Liên Hệ Cấp Cứu</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta-section section-padding">
+            <div class="container text-center">
+                <h2>Bạn Cần Dịch Vụ Cụ Thể?</h2>
+                <p>Hãy liên hệ với chúng tôi để được tư vấn và hỗ trợ tốt nhất.</p>
+                <a href="lien-he.html" class="btn btn-cta">Liên Hệ Ngay</a>
+            </div>
+        </section>
+    </main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col about-us">
+                <h3>Về Trung Tâm</h3>
+                <p>
+                    Chúng tôi cam kết mang đến dịch vụ chăm sóc thú cưng tận tâm, chuyên nghiệp 
+                    với đội ngũ y bác sĩ giàu kinh nghiệm và trang thiết bị hiện đại. 
+                    Trung tâm luôn đặt sức khỏe và niềm vui của thú cưng lên hàng đầu.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col quick-links">
+                <h3>Liên Kết Nhanh</h3>
+                <ul>
+                    <li><a href="home.html">Trang Chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+                    <li><a href="dich-vu.html">Dịch Vụ</a></li>
+                    <li><a href="dat-lich-kham.html">Đặt Lịch</a></li>
+                    <li><a href="tin-tuc.html">Tin Tức</a></li>
+                    <li><a href="lien-he.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col services-list">
+                <h3>Dịch Vụ Chính</h3>
+                <ul>
+                    <li><a href="dich-vu.html#kham-chan-doan">Khám & Chẩn Đoán</a></li>
+                    <li><a href="dich-vu.html#tiem-phong">Tiêm Phòng & Tẩy Giun</a></li>
+                    <li><a href="dich-vu.html#phau-thuat">Phẫu Thuật</a></li>
+                    <li><a href="dich-vu.html#spa-grooming">Spa & Grooming</a></li>
+                    <li><a href="dich-vu.html#cap-cuu">Cấp Cứu 24/7</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-info">
+                <h3>Liên Hệ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 415, Đại lộ Bình Dương, TP. Thủ Dầu Một, Bình Dương</p>
+                <p><i class="fas fa-phone"></i> 0817650008
+                <p><i class="fas fa-envelope"></i> 21050067@student.bdu.edu.vn</p>
+                <p><i class="fas fa-clock"></i> Thứ 2 - Thứ 7: 8:00 - 20:00</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

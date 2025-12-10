@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản - Trung Tâm Thú Y</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo.jpg" alt="Logo Trung Tâm Thú Y">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Trang Chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+                    <li><a href="dich-vu.html">Dịch Vụ</a></li>
+                    <li><a href="dat-lich-kham.html">Đặt Lịch</a></li>
+                    <li><a href="lien-he.html">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="dang-nhap.html" class="btn btn-login">Đăng Nhập</a>
+                <a href="dang-ky.html" class="btn btn-register active">Đăng Ký</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-page">
+        <section class="auth-section section-padding">
+            <div class="container">
+                <div class="auth-card reveal">
+                    <h2>Đăng Ký Tài Khoản Mới</h2>
+                    <p class="auth-subtitle">Tham gia cùng chúng tôi để nhận những ưu đãi và dịch vụ tốt nhất!</p>
+                    <form action="#" method="POST" class="auth-form">
+                        <div class="form-group">
+                            <label for="reg-name"><i class="fas fa-user"></i> Họ và Tên <span class="required">*</span></label>
+                            <input type="text" id="reg-name" name="reg-name" required placeholder="Nguyễn Văn A">
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-email"><i class="fas fa-envelope"></i> Email <span class="required">*</span></label>
+                            <input type="email" id="reg-email" name="reg-email" required placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-phone"><i class="fas fa-phone"></i> Số Điện Thoại <span class="required">*</span></label>
+                            <input type="tel" id="reg-phone" name="reg-phone" required placeholder="0123456789">
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password"><i class="fas fa-lock"></i> Mật Khẩu <span class="required">*</span></label>
+                            <input type="password" id="reg-password" name="reg-password" required placeholder="********">
+                            <span class="password-toggle"><i class="fas fa-eye"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-confirm-password"><i class="fas fa-lock"></i> Xác Nhận Mật Khẩu <span class="required">*</span></label>
+                            <input type="password" id="reg-confirm-password" name="reg-confirm-password" required placeholder="********">
+                            <span class="password-toggle"><i class="fas fa-eye"></i></span>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
+                            <label for="terms-conditions">Tôi đồng ý với <a href="#" class="text-link">Điều khoản & Điều kiện</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-auth">Đăng Ký</button>
+                    </form>
+                    <div class="auth-footer">
+                        <p>Đã có tài khoản? <a href="dang-nhap.html" class="text-link">Đăng nhập ngay</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-us">
+                    <h3>Về Trung Tâm</h3>
+                    <p>Chúng tôi cam kết mang đến dịch vụ chăm sóc thú cưng tận tâm, chuyên nghiệp với đội ngũ y bác sĩ giàu kinh nghiệm và trang thiết bị hiện đại.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col quick-links">
+                    <h3>Liên Kết Nhanh</h3>
+                    <ul>
+                        <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+                        <li><a href="dich-vu.html">Dịch Vụ</a></li>
+                        <li><a href="dat-lich-kham.html">Đặt Lịch</a></li>
+                        <li><a href="tin-tuc.html">Tin Tức</a></li>
+                        <li><a href="lien-he.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col services-list">
+                    <h3>Dịch Vụ Chính</h3>
+                    <ul>
+                        <li><a href="dich-vu.html#kham-chan-doan">Khám & Chẩn Đoán</a></li>
+                        <li><a href="dich-vu.html#tiem-phong">Tiêm Phòng</a></li>
+                        <li><a href="dich-vu.html#phau-thuat">Phẫu Thuật</a></li>
+                        <li><a href="dich-vu.html#spa-grooming">Spa & Grooming</a></li>
+                        <li><a href="dich-vu.html#cap-cuu">Cấp Cứu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-info">
+                    <h3>Liên Hệ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 415, Đại lộ Bình Dương, TP. Thủ Dầu Một, Bình Dương</p>
+                    <p><i class="fas fa-phone"></i> 0817650008
+                    <p><i class="fas fa-envelope"></i> 21050067@student.bdu.edu.vn</p>
+                    <p><i class="fas fa-clock"></i> Thứ 2 - Thứ 7: 8:00 - 20:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

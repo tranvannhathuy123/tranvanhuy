@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Lịch Khám - Trung Tâm Thú Y</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo.jpg" alt="Logo Trung Tâm Thú Y">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Trang Chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+                    <li><a href="dich-vu.html">Dịch Vụ</a></li>
+                    <li><a href="dat-lich-kham.html" class="active">Đặt Lịch</a></li>
+                    <li><a href="lien-he.html">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="dang-nhap.html" class="btn btn-login">Đăng Nhập</a>
+                <a href="dang-ky.html" class="btn btn-register">Đăng Ký</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('images/banner-2.jpg');">
+            <div class="container">
+                <h1>Đặt Lịch Khám Cho Thú Cưng</h1>
+                <p>Nhanh chóng và tiện lợi, đảm bảo thú cưng của bạn được chăm sóc tốt nhất.</p>
+            </div>
+        </section>
+
+        <section class="appointment-form-section section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Điền Thông Tin Để Đặt Lịch Hẹn</h2>
+                    <p>Vui lòng điền đầy đủ và chính xác thông tin dưới đây. Chúng tôi sẽ liên hệ lại để xác nhận.</p>
+                </div>
+
+                <div class="appointment-form-wrapper reveal">
+                    <form action="#" method="POST" class="appointment-form">
+                        <div class="form-group">
+                            <label for="owner-name"><i class="fas fa-user"></i> Tên Chủ Thú Cưng <span class="required">*</span></label>
+                            <input type="text" id="owner-name" name="owner-name" required placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Số Điện Thoại <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="email" name="email" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="pet-name"><i class="fas fa-paw"></i> Tên Thú Cưng <span class="required">*</span></label>
+                            <input type="text" id="pet-name" name="pet-name" required placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="pet-species"><i class="fas fa-cat"></i> Loài Thú Cưng <span class="required">*</span></label>
+                            <select id="pet-species" name="pet-species" required>
+                                <option value="">Chọn loài</option>
+                                <option value="chó">Chó</option>
+                                <option value="mèo">Mèo</option>
+                                <option value="chim">Chim</option>
+                                <option value="thỏ">Thỏ</option>
+                                <option value="khác">Khác</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment-date"><i class="fas fa-calendar-alt"></i> Ngày Đặt Lịch <span class="required">*</span></label>
+                            <input type="date" id="appointment-date" name="appointment-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment-time"><i class="fas fa-clock"></i> Thời Gian Ưu Tiên <span class="required">*</span></label>
+                            <select id="appointment-time" name="appointment-time" required>
+                                <option value="">Chọn khung giờ</option>
+                                <option value="08:00">08:00 - 09:00</option>
+                                <option value="09:00">09:00 - 10:00</option>
+                                <option value="10:00">10:00 - 11:00</option>
+                                <option value="11:00">11:00 - 12:00</option>
+                                <option value="13:00">13:00 - 14:00</option>
+                                <option value="14:00">14:00 - 15:00</option>
+                                <option value="15:00">15:00 - 16:00</option>
+                                <option value="16:00">16:00 - 17:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service"><i class="fas fa-briefcase-medical"></i> Dịch Vụ Cần Đặt <span class="required">*</span></label>
+                            <select id="service" name="service" required>
+                                <option value="">Chọn dịch vụ</option>
+                                <option value="Khám tổng quát">Khám tổng quát</option>
+                                <option value="Tiêm phòng">Tiêm phòng</option>
+                                <option value="Tẩy giun">Tẩy giun</option>
+                                <option value="Phẫu thuật (tư vấn)">Phẫu thuật (tư vấn)</option>
+                                <option value="Spa & Grooming">Spa & Grooming</option>
+                                <option value="Kiểm tra sức khỏe định kỳ">Kiểm tra sức khỏe định kỳ</option>
+                                <option value="Khác">Khác (ghi rõ ở Ghi chú)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes"><i class="fas fa-comment-dots"></i> Ghi Chú / Triệu Chứng (nếu có)</label>
+                            <textarea id="notes" name="notes" rows="5" placeholder=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit-appointment">Gửi Lịch Hẹn</button>
+                    </form>
+                    <div id="form-message" class="form-message"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-us">
+                    <h3>Về Trung Tâm</h3>
+                    <p>Chúng tôi cam kết mang đến dịch vụ chăm sóc thú cưng tận tâm, chuyên nghiệp với đội ngũ y bác sĩ giàu kinh nghiệm và trang thiết bị hiện đại.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col quick-links">
+                    <h3>Liên Kết Nhanh</h3>
+                    <ul>
+                        <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+                        <li><a href="dich-vu.html">Dịch Vụ</a></li>
+                        <li><a href="dat-lich-kham.html">Đặt Lịch</a></li>
+                        <li><a href="tin-tuc.html">Tin Tức</a></li>
+                        <li><a href="lien-he.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col services-list">
+                    <h3>Dịch Vụ Chính</h3>
+                    <ul>
+                        <li><a href="dich-vu.html#kham-chan-doan">Khám & Chẩn Đoán</a></li>
+                        <li><a href="dich-vu.html#tiem-phong">Tiêm Phòng</a></li>
+                        <li><a href="dich-vu.html#phau-thuat">Phẫu Thuật</a></li>
+                        <li><a href="dich-vu.html#spa-grooming">Spa & Grooming</a></li>
+                        <li><a href="dich-vu.html#cap-cuu">Cấp Cứu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-info">
+                    <h3>Liên Hệ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 415, Đại lộ Bình Dương, TP. Thủ Dầu Một, Bình Dương</p>
+                    <p><i class="fas fa-phone"></i> 0817650008
+                    <p><i class="fas fa-envelope"></i> 21050067@student.bdu.edu.vn</p>
+                    <p><i class="fas fa-clock"></i> Thứ 2 - Thứ 7: 8:00 - 20:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Trung Tâm Thú Y. Bảo Lưu Mọi Quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

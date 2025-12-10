@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ Với Chúng Tôi - Trung Tâm Thú Y</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo.jpg" alt="Logo Trung Tâm Thú Y">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Trang Chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+                    <li><a href="dich-vu.html">Dịch Vụ</a></li>
+                    <li><a href="dat-lich-kham.html">Đặt Lịch</a></li>
+                    <li><a href="lien-he.html" class="active">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="dang-nhap.html" class="btn btn-login">Đăng Nhập</a>
+                <a href="dang-ky.html" class="btn btn-register">Đăng Ký</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('images/banner-2.jpg');">
+            <div class="container">
+                <h1>Liên Hệ Với Chúng Tôi</h1>
+                <p>Chúng tôi luôn sẵn lòng lắng nghe và hỗ trợ bạn.</p>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Chúng Tôi Luôn Sẵn Sàng Trợ Giúp</h2>
+                    <p>Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ qua các kênh dưới đây hoặc gửi tin nhắn cho chúng tôi.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h3>Thông Tin Liên Hệ</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: 415, Đại lộ Bình Dương, TP. Thủ Dầu Một, Bình Dương</p>
+                        <p><i class="fas fa-phone"></i> Điện thoại: </p>
+                        <p><i class="fas fa-envelope"></i> Email: 21050067@student.bdu.edu.vn</p>
+                        <p><i class="fas fa-clock"></i> Giờ làm việc: Thứ 2 - Thứ 7: 8:00 - 20:00</p>
+                        <ul>
+                            <li>Chủ Nhật: Đóng cửa (Chỉ tiếp nhận cấp cứu)</li>
+                        </ul>
+                        <div class="social-links mt-4">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper reveal">
+                        <h3>Gửi Tin Nhắn Cho Chúng Tôi</h3>
+                        <form action="#" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Họ và Tên <span class="required">*</span></label>
+                                <input type="text" id="contact-name" name="contact-name" required placeholder="Nguyễn Văn A">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email <span class="required">*</span></label>
+                                <input type="email" id="contact-email" name="contact-email" required placeholder="example@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Chủ Đề <span class="required">*</span></label>
+                                <input type="text" id="contact-subject" name="contact-subject" required placeholder="Vấn đề bạn muốn liên hệ...">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Nội Dung <span class="required">*</span></label>
+                                <textarea id="contact-message" name="contact-message" rows="6" required placeholder="Mô tả chi tiết nội dung bạn muốn gửi..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit-contact">Gửi Tin Nhắn</button>
+                        </form>
+                        <div id="contact-form-message" class="form-message"></div>
+                    </div>
+                </div>
+
+                <div class="map-container reveal">
+                    <h3>Vị Trí Của Chúng Tôi</h3>
+                    <!-- Thay thế iframe này bằng mã nhúng Google Maps thực tế của địa điểm của bạn -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1430043513337!2d106.69343721471799!3d10.796033892313621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e08d1f7e03%3A0x7d6f5f8d5f3d4f8!2sIndependence%20Palace!5e0!3m2!1sen!2svn!4v1634567890123!5m2!1sen!2svn" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-us">
+                    <h3>Về Trung Tâm</h3>
+                    <p>Chúng tôi cam kết mang đến dịch vụ chăm sóc thú cưng tận tâm, chuyên nghiệp với đội ngũ y bác sĩ giàu kinh nghiệm và trang thiết bị hiện đại.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col quick-links">
+                    <h3>Liên Kết Nhanh</h3>
+                    <ul>
+                        <li><a href="gioi-thieu.html">Giới Thiệu</a></li>
+                        <li><a href="dich-vu.html">Dịch Vụ</a></li>
+                        <li><a href="dat-lich-kham.html">Đặt Lịch</a></li>
+                        <li><a href="tin-tuc.html">Tin Tức</a></li>
+                        <li><a href="lien-he.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col services-list">
+                    <h3>Dịch Vụ Chính</h3>
+                    <ul>
+                        <li><a href="dich-vu.html#kham-chan-doan">Khám & Chẩn Đoán</a></li>
+                        <li><a href="dich-vu.html#tiem-phong">Tiêm Phòng</a></li>
+                        <li><a href="dich-vu.html#phau-thuat">Phẫu Thuật</a></li>
+                        <li><a href="dich-vu.html#spa-grooming">Spa & Grooming</a></li>
+                        <li><a href="dich-vu.html#cap-cuu">Cấp Cứu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-info">
+                    <h3>Liên Hệ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 415, Đại lộ Bình Dương, TP. Thủ Dầu Một, Bình Dương</p>
+                    <p><i class="fas fa-phone"></i> 0817650008
+                    <p><i class="fas fa-envelope"></i> 21050067@student.bdu.edu.vn</p>
+                    <p><i class="fas fa-clock"></i> Thứ 2 - Thứ 7: 8:00 - 20:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
